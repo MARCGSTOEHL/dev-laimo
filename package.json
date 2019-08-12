@@ -3,10 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "@material-ui/core": "^4.3.0",
+    "@material-ui/icons": "^4.2.1",
+    "bootstrap": "^4.3.1",
+    "feather-icons": "^4.22.1",
+    "font-awesome": "^4.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-feather": "^2.0.3",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
+  "homepage":"dev.sentio.ch/laimo",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
