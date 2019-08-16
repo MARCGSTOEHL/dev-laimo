@@ -15,7 +15,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
-  "homepage":"dev.sentio.ch/laimo",
+  "homepage": "dev.sentio.ch/laimo",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

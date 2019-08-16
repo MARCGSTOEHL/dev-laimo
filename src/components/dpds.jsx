@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ListDPD from "./common/listDPD";
 import NavAppBar from "./common/navAppBar";
+import AppBar from "@material-ui/core/AppBar";
 
 class Dpds extends Component {
   render() {
@@ -8,7 +9,12 @@ class Dpds extends Component {
 
     return (
       <React.Fragment>
-      <NavAppBar site_title="Übersicht Liegenschaften" menu={true} search={true}/>
+        <NavAppBar
+          site_title="Übersicht Liegenschaften"
+          menu={true}
+          search={true}
+          position="fixed"
+        />
         <ListDPD items={dpds} onDelete={onDelete} onChecked={onChecked} />
       </React.Fragment>
     );

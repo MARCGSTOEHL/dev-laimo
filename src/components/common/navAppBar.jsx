@@ -17,12 +17,12 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1
-  },
+  }
 }));
 
 export default function NavAppBar(props) {
   const classes = useStyles();
-  const { site_title, history, menu, search } = props;
+  const { site_title, history, menu, search, position } = props;
 
   console.log("before", menu);
 
@@ -52,16 +52,25 @@ export default function NavAppBar(props) {
   }
 
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed">
-        <Toolbar>
-          {icon}
-          <Typography variant="h6" className={classes.title} align="center">
-            {site_title}
-          </Typography>
-          {/* <Button color="inherit">Login</Button> */}
-        </Toolbar>
-      </AppBar>
-    </div>
+    <React.Fragment>
+      <div className={classes.root}>
+          <Toolbar>
+            {icon}
+            <Typography variant="h6" className={classes.title} align="center">
+              {site_title}
+            </Typography>
+            {/* <Button color="inherit">Login</Button> */}
+          </Toolbar>
+        <AppBar position={position}>
+          <Toolbar>
+            {icon}
+            <Typography variant="h6" className={classes.title} align="center">
+              {site_title}
+            </Typography>
+            {/* <Button color="inherit">Login</Button> */}
+          </Toolbar>
+        </AppBar>
+      </div>
+    </React.Fragment>
   );
 }

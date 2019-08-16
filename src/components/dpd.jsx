@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { getDpd } from "./service/fakeDPDService";
 import FeatureCard from "./common/featureCard";
 import NavAppBar from "./common/navAppBar";
-import { fade, makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
 
 class DPD extends Component {
   state = {
@@ -24,20 +24,16 @@ class DPD extends Component {
     //For leanring purposes
     console.log("Render - DPD");
 
-    const useStyles = makeStyles(theme => ({
-      toolbar: theme.mixins.toolbar
-    }));
-
     const { match, history } = this.props;
     const { dpd } = this.state;
-    const classes = useStyles();
 
     return (
       <React.Fragment>
         <NavAppBar
           site_title={`${dpd.address.street} ${dpd.address.streetnr}`}
           history={history}
-        /><div className={classes.toolbar}>
+          position="fixed"
+        />
         <div className="card">
           <img
             src="https://source.unsplash.com/800x250/?apartment,door"
@@ -107,7 +103,7 @@ class DPD extends Component {
               <FeatureCard label="Mieter" feature="tenant" linkTo="tenant" />
             </div>
           </div>
-        </div></div>
+        </div>
       </React.Fragment>
     );
   }
