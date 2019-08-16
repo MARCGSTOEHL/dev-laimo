@@ -15,7 +15,11 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
+<<<<<<< HEAD
   "homepage": "https://fierce-mesa-19395.herokuapp.com",
+=======
+  "homepage": "http://sentio.ch/laimo/",
+>>>>>>> d2743cf8d4d11492d98a6c422366ad0fed937b29
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
