@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { getDpd } from "./service/fakeDPDService";
 import FeatureCard from "./common/featureCard";
 import NavAppBar from "./common/navAppBar";
-import AppBar from "@material-ui/core/AppBar";
 
 class DPD extends Component {
   state = {
